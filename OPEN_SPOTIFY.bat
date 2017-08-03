@@ -13,16 +13,16 @@ REM if '%choice%'=='3' goto test
 cls
 :start
 ECHO.
-ECHO Gostaria de iniciar o SLACK?
+ECHO Gostaria de iniciar o SPOTIFY?
 set /p choice=Escolha s/n:  
 rem if not '%choice%'=='' set choice=%choice:~0;1% (don`t use this command, because it takes only first digit in the case you type more digits. After that for example choice 23455666 is choice 2 and you get "bye"
 if not '%choice%'=='s' if not '%choice%'=='S'  goto end
-if '%choice%'=='s' goto Slack
-if '%choice%'=='S' goto Slack
+if '%choice%'=='s' goto software
+if '%choice%'=='S' goto software
 goto start
-:Slack
-cd "C:\Users\%USERNAME%\AppData\Local\slack\" 
-start slack.exe
+:software
+cd "C:\Users\hugo.freitas\AppData\Roaming\Spotify\" 
+start Spotify.exe
 goto end
 :end
 exit
