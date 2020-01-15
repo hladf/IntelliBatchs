@@ -21,9 +21,7 @@ if '%choice%'=='s' goto software
 if '%choice%'=='S' goto software
 goto start
 :software
-REM cd "C:\Program Files\Docker\Docker\Docker Desktop.exe" 
-REM start "Docker Desktop.exe"
-"C:\Program Files\Docker\Docker\Docker Desktop.exe"
+start "" "C:\Program Files\Docker\Docker\Docker Desktop.exe"
 goto end
 :end
 exit
