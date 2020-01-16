@@ -13,7 +13,7 @@ REM if '%choice%'=='3' goto test
 cls
 :start
 ECHO.
-ECHO Gostaria de iniciar o skype?
+ECHO Gostaria de iniciar o 'Docker Desktop'?
 set /p choice=Escolha s/n:  
 rem if not '%choice%'=='' set choice=%choice:~0;1% (don`t use this command, because it takes only first digit in the case you type more digits. After that for example choice 23455666 is choice 2 and you get "bye"
 if not '%choice%'=='s' if not '%choice%'=='S'  goto end
